@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+echo "[bonfyre] Checking exhibit completeness…"
