@@ -1,0 +1,56 @@
+[
+  {
+    "id": "demo-museum-exhibit-a",
+    "file": "workers-hall-curation-notes.md",
+    "time": "Demo dataset",
+    "status": "complete",
+    "brief": "Exhibit concept centers on one room as a civic stage: labor meetings, school recitals, and neighborhood organizing all passed through the same hall. The recommended narrative arc moves from artifact context to personal testimony to a final wall on local legacy.",
+    "tags": [
+      "labor",
+      "community",
+      "exhibit-arc"
+    ],
+    "flagged": true,
+    "demo": true,
+    "searchSummary": "curation notes, object story, room context",
+    "whyItMatters": "One collection item becomes part of a searchable exhibit.",
+    "searchIntro": "One collection item becomes part of a searchable exhibit. Search across the seeded records to feel that inside the app.",
+    "searchOutputs": []
+  },
+  {
+    "id": "demo-museum-exhibit-b",
+    "file": "Related workers-hall-curation-notes.md",
+    "time": "Demo dataset",
+    "status": "complete",
+    "brief": "A second seeded record extends the same workflow so in-app search and reuse are visible instead of theoretical.",
+    "tags": [
+      "labor",
+      "community",
+      "related"
+    ],
+    "flagged": false,
+    "demo": true,
+    "searchSummary": "related signals, continuity, reuse",
+    "whyItMatters": "One collection item becomes part of a searchable exhibit.",
+    "searchIntro": "One collection item becomes part of a searchable exhibit. Search across the seeded records to feel that inside the app.",
+    "searchOutputs": []
+  },
+  {
+    "id": "demo-museum-exhibit-c",
+    "file": "Follow-up workers-hall-curation-notes.md",
+    "time": "Demo dataset",
+    "status": "complete",
+    "brief": "A third seeded record shows how this app can connect follow-up work, recurring themes, and downstream use without leaving the demo experience.",
+    "tags": [
+      "labor",
+      "community",
+      "follow-up"
+    ],
+    "flagged": false,
+    "demo": true,
+    "searchSummary": "follow-up, memory, downstream action",
+    "whyItMatters": "One collection item becomes part of a searchable exhibit.",
+    "searchIntro": "One collection item becomes part of a searchable exhibit. Search across the seeded records to feel that inside the app.",
+    "searchOutputs": []
+  }
+]
