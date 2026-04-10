@@ -1,0 +1,15 @@
+{
+  "type": "tone-features",
+  "feature_set": "eGeMAPSv02",
+  "feature_count": 88,
+  "features": {
+    "F0semitoneFrom27.5Hz_sma3nz_amean": 26.628969,
+    "F0semitoneFrom27.5Hz_sma3nz_stddevNorm": 0.178972,
+    "loudness_sma3_amean": 0.49468,
+    "loudness_sma3_stddevNorm": 0.442426,
+    "spectralFlux_sma3_amean": 0.075961,
+    "HNRdBACF_sma3nz_amean": 9.528842,
+    "shimmerLocaldB_sma3nz_amean": 0.792096,
+    "jitterLocal_sma3nz_amean": 0.01911
+  }
+}

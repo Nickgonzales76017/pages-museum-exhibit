@@ -1,0 +1,17 @@
+{
+  "title": "Follow-up workers-hall-curation-notes.md",
+  "public_url": "https://www.youtube.com/watch?v=h062M4nDMdU",
+  "source": {
+    "title": "Follow-up workers-hall-curation-notes.md",
+    "channel": "Reference corpus",
+    "duration_seconds": 158
+  },
+  "transcribe": {
+    "avg_confidence": 0.9343,
+    "avg_logprob": -0.464,
+    "rtf": 0.0473,
+    "segments_total": 12,
+    "segments_hallucinated": 1
+  },
+  "retained_media": false
+}

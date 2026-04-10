@@ -1,0 +1,20 @@
+{
+  "type": "language-detection",
+  "languages": [
+    {
+      "language": "en",
+      "confidence": 0.9781,
+      "votes": 8
+    },
+    {
+      "language": "es",
+      "confidence": 0.0022,
+      "votes": 5
+    }
+  ],
+  "tags": [
+    "labor",
+    "community",
+    "exhibit-arc"
+  ]
+}

@@ -1,56 +1,110 @@
 [
   {
-    "id": "demo-museum-exhibit-a",
-    "file": "workers-hall-curation-notes.md",
-    "time": "Reference corpus",
+    "id": "museum-audio-tour-intro",
+    "file": "Museum Audio Tour Introduction",
+    "time": "Public origin \u00b7 32s",
     "status": "complete",
-    "brief": "Exhibit concept centers on one room as a civic stage: labor meetings, school recitals, and neighborhood organizing all passed through the same hall. The recommended narrative arc moves from artifact context to personal testimony to a final wall on local legacy.",
+    "brief": "As you walk through the museum, you are journeying through centuries of history, not  only of this beautiful city's treasured past, but also the first and sometimes forgotten  long-lost inhabitants of this part of the Colorado River area. Your tour will take you through several facets of the region's early and colorful years, the  different cultures and peoples who traverse this area, long before the London Bridge was here.",
     "tags": [
-      "labor",
-      "community",
-      "exhibit-arc"
+      "museum",
+      "exhibit",
+      "audio-tour",
+      "curation",
+      "heritage"
     ],
     "flagged": true,
     "demo": true,
-    "searchSummary": "curation notes, object story, room context",
-    "whyItMatters": "One collection item becomes part of a searchable exhibit.",
-    "searchIntro": "One collection item becomes part of a searchable exhibit. Search across the reference records to feel that inside the app.",
-    "searchOutputs": []
+    "sourceUrl": "https://www.youtube.com/watch?v=y83OCwFB7QM",
+    "sourceLabel": "Watch original public video",
+    "sourceTitle": "Museum Audio Tour Introduction",
+    "publisher": "Havasu Museum",
+    "license": "Public YouTube video processed transiently. Bonfyre retained only derived artifacts.",
+    "sourceCopy": "Source: Havasu Museum on YouTube. Bonfyre downloaded, transcribed, and deleted the media. Only the transcript, brief, and proof remain.",
+    "whyItMatters": "Audio tours and oral histories become structured exhibit content \u2014 heritage preserved in searchable, publishable form.",
+    "searchSummary": "museum, exhibit, audio-tour",
+    "searchIntro": "Search across the museum exhibit records to see how Bonfyre connects related content from different sources.",
+    "outputs": [
+      "exhibit brief",
+      "clean transcript",
+      "proof bundle",
+      "search across exhibits"
+    ],
+    "outputNotes": {
+      "exhibit brief": "Bonfyre extracted the key points from the source audio into a structured exhibit brief.",
+      "clean transcript": "The raw transcript cleaned of filler words, false starts, and artifacts.",
+      "proof bundle": "Full provenance chain: source URL, transcription confidence, processing recipe, and quality flags."
+    },
+    "outputLinks": {
+      "brief": {
+        "href": "demos/museum-exhibit/proofs/museum-audio-tour-intro/brief.md",
+        "label": "Open brief"
+      },
+      "clean transcript": {
+        "href": "demos/museum-exhibit/proofs/museum-audio-tour-intro/clean.txt",
+        "label": "Open clean transcript"
+      },
+      "proof bundle": {
+        "href": "demos/museum-exhibit/proofs/museum-audio-tour-intro/proof.json",
+        "label": "Open proof JSON"
+      }
+    },
+    "searchOutputs": [
+      "search across records"
+    ],
+    "proofPath": "demos/museum-exhibit/proofs/museum-audio-tour-intro"
   },
   {
-    "id": "demo-museum-exhibit-b",
-    "file": "Related workers-hall-curation-notes.md",
-    "time": "Reference corpus",
+    "id": "museum-audio-tour-sample",
+    "file": "Audio Tour Sample (Museum Exhibit)",
+    "time": "Public origin \u00b7 115s",
     "status": "complete",
-    "brief": "A second reference record extends the same workflow so in-app search and reuse are visible instead of theoretical.",
+    "brief": "The title of this painting La Celistina  refers to a character from Comedia de Calisto Imelevia. La Celistina is a portrait of an actual woman from Barcelona  whose name was Calote Vallevia and she was a neighborhood figure. In 1904 Pablo Ruiz Picasso is 23 years old and already  establishing himself as an artistic force. She's got a real  watchful almost cat-like sensibility as she sidles into the picture.",
     "tags": [
-      "labor",
-      "community",
-      "related"
+      "museum",
+      "exhibit",
+      "audio-tour",
+      "curation",
+      "heritage"
     ],
     "flagged": false,
     "demo": true,
-    "searchSummary": "related signals, continuity, reuse",
-    "whyItMatters": "One collection item becomes part of a searchable exhibit.",
-    "searchIntro": "One collection item becomes part of a searchable exhibit. Search across the reference records to feel that inside the app.",
-    "searchOutputs": []
-  },
-  {
-    "id": "demo-museum-exhibit-c",
-    "file": "Follow-up workers-hall-curation-notes.md",
-    "time": "Reference corpus",
-    "status": "complete",
-    "brief": "A third reference record shows how this app can connect follow-up work, recurring themes, and downstream use without leaving the demo experience.",
-    "tags": [
-      "labor",
-      "community",
-      "follow-up"
+    "sourceUrl": "https://www.youtube.com/watch?v=YUiXm2MHLYk",
+    "sourceLabel": "Watch original public video",
+    "sourceTitle": "Audio Tour Sample (Museum Exhibit)",
+    "publisher": "TischTalks",
+    "license": "Public YouTube video processed transiently. Bonfyre retained only derived artifacts.",
+    "sourceCopy": "Source: TischTalks on YouTube. Bonfyre downloaded, transcribed, and deleted the media. Only the transcript, brief, and proof remain.",
+    "whyItMatters": "Audio tours and oral histories become structured exhibit content \u2014 heritage preserved in searchable, publishable form.",
+    "searchSummary": "museum, exhibit, audio-tour",
+    "searchIntro": "Search across the museum exhibit records to see how Bonfyre connects related content from different sources.",
+    "outputs": [
+      "exhibit brief",
+      "clean transcript",
+      "proof bundle",
+      "search across exhibits"
     ],
-    "flagged": false,
-    "demo": true,
-    "searchSummary": "follow-up, memory, downstream action",
-    "whyItMatters": "One collection item becomes part of a searchable exhibit.",
-    "searchIntro": "One collection item becomes part of a searchable exhibit. Search across the reference records to feel that inside the app.",
-    "searchOutputs": []
+    "outputNotes": {
+      "exhibit brief": "Bonfyre extracted the key points from the source audio into a structured exhibit brief.",
+      "clean transcript": "The raw transcript cleaned of filler words, false starts, and artifacts.",
+      "proof bundle": "Full provenance chain: source URL, transcription confidence, processing recipe, and quality flags."
+    },
+    "outputLinks": {
+      "brief": {
+        "href": "demos/museum-exhibit/proofs/museum-audio-tour-sample/brief.md",
+        "label": "Open brief"
+      },
+      "clean transcript": {
+        "href": "demos/museum-exhibit/proofs/museum-audio-tour-sample/clean.txt",
+        "label": "Open clean transcript"
+      },
+      "proof bundle": {
+        "href": "demos/museum-exhibit/proofs/museum-audio-tour-sample/proof.json",
+        "label": "Open proof JSON"
+      }
+    },
+    "searchOutputs": [
+      "search across records"
+    ],
+    "proofPath": "demos/museum-exhibit/proofs/museum-audio-tour-sample"
   }
 ]

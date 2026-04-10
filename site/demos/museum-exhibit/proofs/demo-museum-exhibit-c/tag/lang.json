@@ -1,0 +1,20 @@
+{
+  "type": "language-detection",
+  "languages": [
+    {
+      "language": "en",
+      "confidence": 0.9831,
+      "votes": 9
+    },
+    {
+      "language": "es",
+      "confidence": 0.0045,
+      "votes": 3
+    }
+  ],
+  "tags": [
+    "labor",
+    "community",
+    "follow-up"
+  ]
+}

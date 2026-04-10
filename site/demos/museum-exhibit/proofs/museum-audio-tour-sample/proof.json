@@ -1,0 +1,17 @@
+{
+  "title": "Audio Tour Sample (Museum Exhibit)",
+  "public_url": "https://www.youtube.com/watch?v=YUiXm2MHLYk",
+  "source": {
+    "title": "Audio Tour Sample (Museum Exhibit)",
+    "channel": "TischTalks",
+    "duration_seconds": 115
+  },
+  "transcribe": {
+    "avg_confidence": 0.8779,
+    "avg_logprob": -0.5,
+    "rtf": 0.0366,
+    "segments_total": 17,
+    "segments_hallucinated": 0
+  },
+  "retained_media": false
+}

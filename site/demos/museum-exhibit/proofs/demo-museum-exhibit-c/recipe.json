@@ -1,0 +1,131 @@
+{
+  "pipeline": "full_chain",
+  "version": "1.0",
+  "app": "museum-exhibit",
+  "source": {
+    "title": "Follow-up workers-hall-curation-notes.md",
+    "duration_s": 158
+  },
+  "pipeline_wall_s": 47.9,
+  "steps_total": 23,
+  "steps_ok": 23,
+  "steps_failed": 0,
+  "steps": [
+    {
+      "name": "fetch-metadata",
+      "wall_s": 5.37,
+      "exit": 0
+    },
+    {
+      "name": "download-audio",
+      "wall_s": 6.87,
+      "exit": 0
+    },
+    {
+      "name": "media-prep",
+      "wall_s": 0.92,
+      "exit": 0
+    },
+    {
+      "name": "transcribe",
+      "wall_s": 20.16,
+      "exit": 0
+    },
+    {
+      "name": "transcript-clean",
+      "wall_s": 0.067,
+      "exit": 0
+    },
+    {
+      "name": "paragraph",
+      "wall_s": 0.077,
+      "exit": 0
+    },
+    {
+      "name": "brief",
+      "wall_s": 0.077,
+      "exit": 0
+    },
+    {
+      "name": "tag",
+      "wall_s": 0.201,
+      "exit": 0
+    },
+    {
+      "name": "tone",
+      "wall_s": 0.973,
+      "exit": 0
+    },
+    {
+      "name": "embed",
+      "wall_s": 0.171,
+      "exit": 0
+    },
+    {
+      "name": "offer",
+      "wall_s": 0.053,
+      "exit": 0
+    },
+    {
+      "name": "repurpose-tweet",
+      "wall_s": 0.03,
+      "exit": 0
+    },
+    {
+      "name": "repurpose-linkedin",
+      "wall_s": 0.033,
+      "exit": 0
+    },
+    {
+      "name": "repurpose-youtube",
+      "wall_s": 0.029,
+      "exit": 0
+    },
+    {
+      "name": "render",
+      "wall_s": 0.057,
+      "exit": 0
+    },
+    {
+      "name": "hash",
+      "wall_s": 0.015,
+      "exit": 0
+    },
+    {
+      "name": "pack",
+      "wall_s": 0.031,
+      "exit": 0
+    },
+    {
+      "name": "ledger",
+      "wall_s": 0.04,
+      "exit": 0
+    },
+    {
+      "name": "compress",
+      "wall_s": 0.042,
+      "exit": 0
+    },
+    {
+      "name": "stitch",
+      "wall_s": 0.053,
+      "exit": 0
+    },
+    {
+      "name": "meter",
+      "wall_s": 0.029,
+      "exit": 0
+    },
+    {
+      "name": "emit-html",
+      "wall_s": 0.036,
+      "exit": 0
+    },
+    {
+      "name": "index",
+      "wall_s": 0.088,
+      "exit": 0
+    }
+  ],
+  "total_s": 35.42
+}

@@ -1,0 +1,17 @@
+{
+  "title": "workers-hall-curation-notes.md",
+  "public_url": "https://www.youtube.com/watch?v=chz1ezRyP50",
+  "source": {
+    "title": "workers-hall-curation-notes.md",
+    "channel": "Reference corpus",
+    "duration_seconds": 278
+  },
+  "transcribe": {
+    "avg_confidence": 0.8417,
+    "avg_logprob": -0.482,
+    "rtf": 0.0526,
+    "segments_total": 20,
+    "segments_hallucinated": 2
+  },
+  "retained_media": false
+}

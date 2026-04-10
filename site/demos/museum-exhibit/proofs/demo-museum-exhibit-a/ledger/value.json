@@ -1,0 +1,11 @@
+{
+  "family_id": "brief-demo-museum-exhibit-a",
+  "atoms": 2,
+  "operators": 2,
+  "realizations": 4,
+  "unrealized_targets": 2,
+  "raw_bytes": 48128,
+  "compressed_bytes": 6536,
+  "replacement_cost_usd": 2.15,
+  "portfolio_value_usd": 4.15
+}

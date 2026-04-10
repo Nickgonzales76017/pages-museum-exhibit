@@ -1,0 +1,17 @@
+{
+  "title": "Museum Audio Tour Introduction",
+  "public_url": "https://www.youtube.com/watch?v=y83OCwFB7QM",
+  "source": {
+    "title": "Museum Audio Tour Introduction",
+    "channel": "Havasu Museum",
+    "duration_seconds": 32
+  },
+  "transcribe": {
+    "avg_confidence": 0.8753,
+    "avg_logprob": -0.5,
+    "rtf": 0.0517,
+    "segments_total": 8,
+    "segments_hallucinated": 0
+  },
+  "retained_media": false
+}
