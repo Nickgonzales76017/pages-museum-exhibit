@@ -1,50 +1,37 @@
-# Museum Exhibit Builder
+# Aurekai Source & Exhibit Studio
 
-> Historians + culture orgs build exhibits from audio
+**[Open the public-source Exhibit Studio](https://nickgonzales76017.github.io/pages-museum-exhibit/exhibit-studio/)** · [Original museum media-intake application](https://nickgonzales76017.github.io/pages-museum-exhibit/) · [Creator Studio](https://nickgonzales76017.github.io/pages-podcast-plant/studio/)
 
+## Curate a collection that keeps the original record
 
-## Pipeline Intelligence
+An exhibition is more than a slideshow. Aurekai's Exhibit Studio binds every interpretive object to an original source, preserves media attribution, distinguishes curator interpretation from rights clearance and gives visitors a navigable chronological story.
 
-| Capability | Detail |
-|---|---|
-| Transcription quality | **0.997** (HCP v3.2, tiny q5_0, 29 MB model) |
-| Hallucination detection | **9 layers** — 0.09% error rate (1 in 1,096 segments) |
-| Pipeline latency | **< 8 ms** per stage |
-| Total binary size | **~2.1 MB** (48 static C11 binaries) |
-| JSON compression | **9.3%** ratio with O(1) field reads (Lambda Tensors) |
-| OpenAI compatibility | Drop-in via **bonfyre-proxy** (`/v1/audio/transcriptions`, `/v1/chat/completions`) |
-| Tests passing | **167** |
+The initial **A Voice in the Archive** example follows Sara Teasdale's writing using a historical portrait, literary history, an official award record and a sourced public-domain LibriVox reading. You can see the original references beside the exhibit rather than trusting a rewritten caption.
 
-## Quick Start
+The [Poetry Foundation author entry](https://www.poetryfoundation.org/poets/sara-teasdale) and [Pulitzer historical winner entry](https://www.pulitzer.org/winners/sara-teasdale) are linked as sources, not reproduced as articles. The public-domain recording is a short licensed excerpt from [LibriVox Short Poetry Collection 266](https://archive.org/details/spc266_2508_librivox). Its presence does not authorize reuse of every recording or object in an unrelated institution.
 
-### Browser-first GitHub-native intake
+## A complete curatorial session
 
-1. Open the live Pages app.
-2. Select a file and download the intake-ready renamed copy.
-3. Open the repo `input/` folder from the app and upload that file with GitHub's own web UI.
-4. Commit to `main`; the Bonfyre Actions runtime processes it and republishes the site.
+Open the workspace, choose an object and inspect its original URL, creator/institution credit, date, media type and rights status. Edit its interpretive text or caption as **Marin, curator**; reorder the object sequence; add an archival reference with an exact HTTPS origin; or write optional human-reviewed Spanish interpretation.
 
-### Local repo workflow
+The visitor preview updates as you edit. It includes media playback when a source is explicitly bound, and keeps **original source and credit** next to each object. Imported content starts unreviewed; a title or URL is not evidence of authenticity.
 
-```bash
-make setup
-cp ~/my-recording.wav input/
-git add input/ && git commit -m "add recording"
-git push
-```
+Review interpretation and original source as the curator. Then switch to **Ellen, rights reviewer** to consider whether a photograph or recording can be reproduced in the exhibit. Media with missing review stays visibly unresolved, even if its summary text looks finished. No visitor export receives invented public-institution permission.
 
-## Architecture
+Once each source and media decision has been recorded locally, switch to **Taylor, publication reviewer** to prepare the draft visitor experience. You can export standalone visitor HTML or a typed YAFF handoff for authorized institutional publication. These are **local drafts**, not a live museum CMS push or release receipt.
 
-```
-browser prepare  →  GitHub web upload  →  input/
-                                          ↓
-                             reusable Bonfyre runtime workflow
-                                          ↓
-                         artifacts/ + site/job.json + site/summary.json
-                                          ↓
-                                   site/  →  GitHub Pages
-```
+## Curate your own material
 
-## Powered By
+Bring exact source pages and optional permitted media URLs. The studio checks identity collisions, bounds the local exhibit to 75 items, refuses invalid origins and preserves its editorial order. Author and institution credits remain part of the object. Media rights remain unresolved until reviewed independently.
 
-[Bonfyre](https://github.com/Nickgonzales76017/bonfyre) — 48 composable C11 binaries. ~2.1 MB total.
+The separate original [Museum Exhibit Builder](https://nickgonzales76017.github.io/pages-museum-exhibit/) provides its existing GitHub-native media intake. It requires its own user-authorized upload and processing; a browser preview cannot trigger or impersonate that workflow.
+
+Local drafts use browser structured-clone persistence with a compare-and-swap revision check. If browser storage is cleared, the saved workspace can be lost. Export your reviewed draft before clearing local data.
+
+## Connected programs
+
+[Creator Studio](https://nickgonzales76017.github.io/pages-podcast-plant/studio/) can edit source recordings while keeping their credits and origin. [Funding & Impact Studio](https://nickgonzales76017.github.io/pages-grant-evidence/impact-studio/) can model a cultural project’s cost, matching funds and measurable commitments. These links do **not** import or approve an exhibit, verify ownership or certify a participant's consent on either side.
+
+This is a rights-aware, source-linked **customer workbench** with browser-local review, not an authoritative archive catalog, public institution’s endorsement, rights certificate or production multi-tenant museum publisher.
+
+[Return to Bonfÿre/Aurekai work samples](https://nickgonzales76017.github.io/bonfyre/#experiences).
