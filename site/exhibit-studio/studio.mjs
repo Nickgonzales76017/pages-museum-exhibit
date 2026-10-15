@@ -65,7 +65,7 @@ function objects(){
   button.type="button";button.setAttribute("aria-pressed",String(item.id===selected));
   button.append(html("span","year",item.year+" · "+item.type),html("strong",null,item.title),
    html("span","source",item.source),html("span","badge",item.state.replaceAll("_"," ")));
-  button.addEventListener("click",()=>{selected=item.id;render();});
+  button.addEventListener("click",()=>{selected=item.id;$("rightsAttestation").checked=false;render();});
   list.append(button);
  }
 }
@@ -87,7 +87,7 @@ function editor(){
  $("moveDown").disabled=!curator||world.order.indexOf(item.id)===world.order.length-1;
  $("sourceReview").disabled=!curator||item.state!=="source_supplied";
  $("sourceReview").textContent=item.state==="source_supplied"?"Review original source":"Source reviewed ✓";
- $("rightsClear").disabled=!rights||item.state==="source_supplied"||!["image","audio"].includes(item.type)||item.rights==="cleared";
+ $("rightsClear").disabled=!rights||!$("rightsAttestation").checked||item.state==="source_supplied"||!["image","audio"].includes(item.type)||item.rights==="cleared";
  $("rightsRefuse").disabled=!rights||item.state==="source_supplied"||!["image","audio"].includes(item.type);
 }
 function visitor(){
@@ -130,6 +130,7 @@ function render(){
  objects();editor();visitor();reviews();
 }
 $("actor").addEventListener("change",e=>{world.actor=e.target.value;render();notice("Simulated curatorial role changed. This is not institutional authentication.");});
+$("rightsAttestation").addEventListener("change",()=>editor());
 $("language").addEventListener("change",e=>{lang=e.target.value;visitor();});
 $("moveUp").addEventListener("click",()=>safe(()=>mutate("reorder",{id:selected,direction:-1})));
 $("moveDown").addEventListener("click",()=>safe(()=>mutate("reorder",{id:selected,direction:1})));
@@ -138,14 +139,12 @@ $("saveInterpretation").addEventListener("click",()=>safe(()=>{
  notice("Interpretation changed. Source and rights checks must be reviewed again where applicable.");
 }));
 $("sourceReview").addEventListener("click",()=>safe(()=>{
- const item=sel();
- if(!confirm("Have you actually inspected the original reference "+item.source+"? This records only your local source review."))return;
- mutate("source-review",{id:selected});notice("Source reviewed locally. Embedded media still needs a separate rights decision.");
+ mutate("source-review",{id:selected});notice("Local curator review recorded. Original source remains linked. Embedded media still needs independent rights review.");
 }));
 $("rightsClear").addEventListener("click",()=>safe(()=>{
- const i=sel();
- if(!confirm("Record local media-rights review for "+i.title+"? Check jurisdiction, institutional rights, reuse and required attribution first."))return;
- mutate("rights",{id:selected,rights:"cleared",note:"Curator/rights reviewer locally assessed stated license and credit"});
+ if(!$("rightsAttestation").checked)throw Error("Confirm your source and rights examination before recording a review.");
+ mutate("rights",{id:selected,rights:"cleared",note:"Separate local reviewer attested inspection of displayed credit and license; no third-party grant asserted"});
+ $("rightsAttestation").checked=false;render();
  notice("Local rights review recorded; this is not a third-party clearance.");
 }));
 $("rightsRefuse").addEventListener("click",()=>safe(()=>{
