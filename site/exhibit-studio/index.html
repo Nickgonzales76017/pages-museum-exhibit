@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<meta name="description" content="Aurekai Exhibit Studio: build a source-linked oral-history exhibit with curatorial review, media rights, a visitor preview and independently reviewed publication.">
+<link rel="canonical" href="https://nickgonzales76017.github.io/pages-museum-exhibit/exhibit-studio/">
+<title>Exhibit Studio · Aurekai</title><link rel="stylesheet" href="./studio.css"><script type="module" src="./studio.mjs"></script></head><body>
+<a class="skip" href="#work">Skip to exhibition editor</a>
+<header class="topbar"><a href="../" class="brand"><span class="mark">A·</span><span>AUREKAI<small>ARCHIVES / CURATORIAL EXPERIENCES</small></span></a>
+<nav aria-label="Product connections"><a href="../">Original museum intake</a><a href="https://nickgonzales76017.github.io/pages-podcast-plant/studio/">Creator Studio</a><a href="https://nickgonzales76017.github.io/pages-grant-evidence/impact-studio/">Funding & Impact</a><a href="https://nickgonzales76017.github.io/bonfyre/#experiences">All work ↗</a></nav>
+<span class="presence"><span class="dot"></span> Local curatorial draft</span></header>
+<main id="work">
+<section class="intro"><div class="eyebrow">SOURCED RECORDING / HISTORICAL OBJECT / RIGHTS / PRESENTATION</div>
+<div class="intro-grid"><div><h1>The story stays<br><em>with its source.</em></h1><p>Curate a narrated collection with real archival references, original media, a listening room and a public visitor preview. No unsourced object or unpublished permission is silently turned into an exhibit.</p></div>
+<div class="hero-actions"><button id="reset" class="quiet" type="button">Load curated source example</button><button id="save" class="primary" type="button">Save exhibition</button><button id="export" class="secondary" type="button">Export visitor HTML ↓</button></div></div>
+</section>
+<section class="identity">
+<div class="identity-cell"><span>COLLECTION</span><strong id="collection">A Voice in the Archive</strong></div>
+<div class="identity-cell"><span>ORIGINAL SUBJECT</span><strong>Sara Teasdale · writing and recording</strong></div>
+<label class="identity-cell role">ACT AS<select id="actor"><option value="marin">Marin · curator</option><option value="ellen">Ellen · rights reviewer</option><option value="taylor">Taylor · publication reviewer</option></select></label>
+<div class="identity-cell"><span>RELEASE STATE</span><strong id="releaseStatus">Draft</strong></div></section>
+<section class="metrics">
+<div class="metric"><span>ARCHIVAL OBJECTS</span><strong id="itemsMetric">—</strong><small>Original-source identities</small></div>
+<div class="metric"><span>CURATOR-REVIEWED</span><strong id="reviewMetric">—</strong><small>Interpretive text checked</small></div>
+<div class="metric"><span>MEDIA RIGHTS REVIEWED</span><strong id="rightsMetric">—</strong><small>Embed and reuse decisions</small></div>
+<div class="metric"><span>PUBLICATION ISSUES</span><strong id="issuesMetric">—</strong><small>Unresolved review gates</small></div>
+</section>
+<div class="experience">
+<section class="workspace">
+<div class="section-head"><div><span class="eyebrow">01 / OBJECTS &amp; EXACT SOURCES</span><h2>Exhibition sequence</h2></div><span class="revision" id="revision">Revision 0</span></div>
+<div class="work-content"><div class="objects" id="objects" aria-label="Exhibit objects in curatorial order"></div>
+<div class="inspector"><div class="eyebrow">SELECTED OBJECT</div><h3 id="objectTitle">Choose a source</h3>
+<div class="object-meta"><span id="objectDate">—</span><span id="objectState">—</span><span id="objectLicense">—</span></div>
+<div id="mediaStage" class="media-stage"></div>
+<label>Exhibition interpretation<textarea rows="5" id="objectBody" maxlength="2600"></textarea></label>
+<label>Image/audio caption<textarea rows="2" id="objectCaption" maxlength="600"></textarea></label>
+<label>Reviewed Spanish interpretation (optional)<textarea rows="3" id="objectSpanish" maxlength="500" placeholder="Human-authored translation; not automatically invented"></textarea></label>
+<div class="source-detail"><span>ORIGINAL SOURCE</span><a id="objectSource" href="#" rel="noopener noreferrer" target="_blank">—</a><small id="objectCredit"></small></div>
+<div class="object-actions"><button type="button" class="outline" id="moveUp">↑ Earlier</button><button type="button" class="outline" id="moveDown">↓ Later</button><button type="button" class="primary" id="saveInterpretation">Update interpretation</button></div>
+<div class="review-actions"><button id="sourceReview" type="button" class="secondary">Review source</button><button id="rightsClear" type="button" class="secondary">Review media rights</button><button id="rightsRefuse" type="button" class="secondary">Flag rights issue</button></div>
+<p class="review-note">Curatorial interpretation and media rights are different decisions. Only a separate rights reviewer can clear an embedded recording or photograph.</p>
+</div></div>
+<details class="new-item"><summary>+ Add another source-linked archival object</summary><form id="addObject" class="new-form">
+<label>Source ID<input name="id" required maxlength="70" pattern="[a-z][a-z0-9-]{2,70}"></label>
+<label>Title<input name="title" required maxlength="160"></label>
+<label>Year<input name="year" required type="number" min="1500" max="2200"></label>
+<label>Media kind<select name="type"><option value="document">Document</option><option value="image">Image</option><option value="audio">Audio</option><option value="external">External source reference</option></select></label>
+<label class="full">Original source URL<input name="source" type="url" required placeholder="https://…"></label>
+<label class="full">Optional media URL<input name="media" type="url" placeholder="https://…"></label>
+<label class="full">Source credit<input name="credit" maxlength="500" placeholder="Institution, photographer, reader or collection"></label>
+<label class="full">Curator interpretation<textarea name="body" rows="3" maxlength="2600"></textarea></label>
+<button type="submit" class="primary">Add unreviewed source</button></form></details>
+</section>
+<aside class="preview-column">
+<section class="visitor"><div class="visitor-head"><span class="eyebrow">02 / LIVE VISITOR EXPERIENCE</span><label>Interpretation language<select id="language"><option value="en">English</option><option value="es">Spanish where reviewed</option></select></label></div>
+<div class="visitor-inner"><p class="visitor-eyebrow">AUREKAI / ARCHIVAL LISTENING ROOM</p><h2 id="visitorTitle">A Voice in the Archive</h2><p id="visitorIntro"></p><div id="visitorItems"></div>
+<div class="visitor-foot">Original source and license stay beside every archival item.</div></div></section>
+<section class="review-panel"><div class="eyebrow">03 / RELEASE FRONTIER</div><h3>Prepared, not automatically published.</h3><div id="issues" class="issues"></div>
+<button type="button" id="prepare" class="primary">Prepare reviewed exhibit</button>
+<button type="button" id="handoff" class="outline">Export typed curatorial review ↓</button>
+<p>Exporting visitor HTML creates an offline draft; it does not deploy to a museum or imply approval from source institutions.</p></section>
+<section class="journal-panel"><div class="eyebrow">04 / SOURCE &amp; REVIEW HISTORY</div><h3>Review receipts</h3><div id="journal" class="journal"></div></section>
+</aside></div>
+<section class="related"><div><span class="eyebrow">05 / CONTINUE THE ACTUAL WORK</span><h2>From listening to publishing.</h2><p>Use Creator Studio to edit the voice excerpt and retain its source credit, or Funding & Impact Studio to plan oral-history program delivery. Neither destination inherits this draft or its rights decisions automatically.</p></div><div><a href="https://nickgonzales76017.github.io/pages-podcast-plant/studio/" target="_blank" rel="noopener noreferrer" class="primary">Edit source audio ↗</a><a href="https://nickgonzales76017.github.io/pages-grant-evidence/impact-studio/" target="_blank" rel="noopener noreferrer" class="secondary">Open impact funding ↗</a></div></section>
+</main><footer><span>AUREKAI / RIGHTS-AWARE EXHIBITIONS</span><span>Public-source example · No real institution approval</span><a href="../">Back to original museum intake ↗</a></footer><div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
