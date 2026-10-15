@@ -1,0 +1,28 @@
+name: Exhibit Studio source and rights contracts
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/exhibit-studio/**'
+      - 'tests/exhibit-studio.test.mjs'
+      - '.github/workflows/exhibit-studio-checks.yml'
+  pull_request:
+    paths:
+      - 'site/exhibit-studio/**'
+      - 'tests/exhibit-studio.test.mjs'
+permissions:
+  contents: read
+jobs:
+  exhibit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check exhibition runtime
+        run: |
+          node --check site/exhibit-studio/core.mjs
+          node --check site/exhibit-studio/studio.mjs
+      - name: Run curator, rights and visitor acceptance contracts
+        run: node --test tests/exhibit-studio.test.mjs
