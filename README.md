@@ -2,6 +2,18 @@
 
 **[Open the public-source Exhibit Studio](https://nickgonzales76017.github.io/pages-museum-exhibit/exhibit-studio/)** · [Original museum media-intake application](https://nickgonzales76017.github.io/pages-museum-exhibit/) · [Creator Studio](https://nickgonzales76017.github.io/pages-podcast-plant/studio/)
 
+## Aurekai / Bonfÿre: product contract
+
+| | This experience |
+|---|---|
+| **For** | Curators, educators and publishers |
+| **Outcome** | Build sourced, attributed exhibits from original records and media |
+| **Technical boundary** | A GitHub Pages experience showing source-aware, reviewable work; do not infer a deployed native Bonfÿre executor from the browser UI |
+| **Maturity** | Public-source browser exhibit; attribution is not blanket rights clearance |
+| **Acceptance** | Follow the linked experience and inspect its actual source, tests, workflow and exported artifacts; an illustrative action is not proof of a downstream effect |
+
+**Aurekai** owns the product, public participation and business opportunity. **Bonfÿre** owns the reusable identity, capability, authorization, work and evidence architecture. [Why the two exist](https://github.com/Nickgonzales76017/bonfyre/blob/main/docs/aurekai-bonfyre-model.md).
+
 ## Curate a collection that keeps the original record
 
 An exhibition is more than a slideshow. Aurekai's Exhibit Studio binds every interpretive object to an original source, preserves media attribution, distinguishes curator interpretation from rights clearance and gives visitors a navigable chronological story.
